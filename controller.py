@@ -16,7 +16,7 @@ def controller():
         v.viewMassage(message)
 
 def main():
-    v.viewMassage('Сыграем в игру кости')
+    v.viewMassage('Сыграем в игру кости.\n Для продолжения введите <s>')
     result = False
     v.getLoop()()
 

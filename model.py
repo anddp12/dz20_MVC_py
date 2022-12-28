@@ -15,4 +15,4 @@ def check(score):
     if score == 0:
         return 'Вы проиграли', False
     elif score > 0:
-        return 'Вы еще в игре', True
+        return f'Вы еще в игре. На счету: {score} очков', True
