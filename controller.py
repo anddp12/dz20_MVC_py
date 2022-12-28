@@ -1,5 +1,7 @@
 import model as m
-import view as v
+import view2 as v
+# для подключениия графисеской библиотеки tkinter, 
+# меняем файл view на view2
 
 score = 100
 def controller():
