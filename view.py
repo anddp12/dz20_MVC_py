@@ -1,4 +1,4 @@
-import controller
+import controller as c
 
 def getChoise():
     return input("Нажмите <s> чтобы продолжить игру: ")
@@ -11,4 +11,4 @@ def getLoop():
 
 def mainloop():
     while True:
-        controller.controller()
+        c.controller()

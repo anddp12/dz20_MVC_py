@@ -12,7 +12,7 @@ def score(score, cube):
         return score
 
 def check(score):
-    if score < 0:
+    if score == 0:
         return 'Вы проиграли', False
     elif score > 0:
         return 'Вы еще в игре', True

@@ -1,14 +1,15 @@
 import model as m
 import view as v
 
+score = 100
 def controller():
-    score = 100
+    global score
     user = v.getChoise()
     if user == "s":
         cube = m.cube()
         print("🎲:", cube)
-        s = m.score(score, cube)
-        print("🧮:", s)
+        score = m.score(score, cube)
+        print("🧮:", score)
         message, result = m.check(score)
         v.viewMassage(message)
 
