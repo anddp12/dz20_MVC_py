@@ -9,12 +9,13 @@ def controller():
         print("🎲:", cube)
         s = m.score(score, cube)
         print("🧮:", s)
-        message = m.check(s)
+        message, result = m.check(score)
         v.viewMassage(message)
 
 def main():
     v.viewMassage('Сыграем в игру кости')
-    f = controller()
+    result = False
+    v.getLoop()()
 
 if __name__ == '__main__':
     main()
